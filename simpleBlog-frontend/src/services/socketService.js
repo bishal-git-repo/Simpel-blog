@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 class SocketService {
   constructor() {
     this.socket = null;
-    this.url = "http://localhost:3000"; // Fixed URL
+    this.url = "https://simpel-blog-backend.onrender.com"; // Fixed URL
   }
 
   connect() {
