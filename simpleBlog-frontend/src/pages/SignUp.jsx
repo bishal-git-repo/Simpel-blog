@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../services/axiosInstance";
 import toastService from "../services/toastifyMessage";
 
@@ -122,9 +122,9 @@ function SignUp() {
         </form>
         <div className="mt-4 text-center">
           <p className="text-gray-600">Already have an account?</p>
-          <a href="/login" className="text-blue-500 font-semibold hover:underline">
+          <Link to="/login" className="text-blue-500 font-semibold hover:underline">
             Login
-          </a>
+          </Link>
         </div>
       </div>
     </div>
