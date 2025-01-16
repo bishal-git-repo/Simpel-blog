@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../services/axiosInstance";
 import toastService from "../services/toastifyMessage";
 import { useDispatch } from "react-redux";
@@ -76,9 +76,12 @@ function Login() {
         </form>
         <div className="mt-4 text-center">
           <p className="text-gray-600">Don't have an account?</p>
-          <a href="/signup" className="text-blue-500 font-semibold hover:underline">
+{/*           <a href="/signup" className="text-blue-500 font-semibold hover:underline">
             Sign Up
-          </a>
+          </a> */}
+          <Link to="/signup" className="text-blue-500 font-semibold hover:underline">
+            Sign Up
+          </Link>
         </div>
         
       </div>
